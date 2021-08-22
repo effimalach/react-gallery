@@ -15,7 +15,7 @@ function Gallery() {
 
             <h1>gallry</h1>
             {
-                photos.map((photo,i)=><div key={i}><img width="150px" height="150px" src={photo.thumbnailUrl} /></div>)
+                photos.map((photo,i)=><div key={i}><img alt="something" width="150px" height="150px" src={photo.thumbnailUrl} /></div>)
             }
         </div>
     )

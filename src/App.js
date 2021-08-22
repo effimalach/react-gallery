@@ -1,7 +1,6 @@
 import './App.css';
 import React,{useState,useEffect} from 'react';
 import Gallery from './Gallery.js';
-import HomePage from './HomePage.js';
 
 import {
   Switch,
@@ -29,7 +28,7 @@ function App() {
        history.push(`/gallery/`+id);
       }}>
         {
-          albums.map((album)=><option value={album.id} >{album.title}</option>)
+          albums.map((album,i)=><option key={i} value={album.id} >{album.title}</option>)
         }
     </select>
 
